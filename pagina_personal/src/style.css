@@ -13,6 +13,88 @@
   height: 300px;
 }
 
+.contenedor{
+    background-color: #D9ABFF;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.style_carta {
+    background-color: #FCE4EC;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    color: #F8BBD0;
+    border: 2px solid #FFCDD2;
+    height: 150px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.style_carta:hover{
+    transform: rotateY(180deg);
+  }
+
+  .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #FCE4EC;
+    color: #F8BBD0;
+  }
+  
+  .titulo{
+    background-color: #D9ABFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New';
+    height: 100px;
+  }
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: white;
+    color: #F8BBD0;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .thefront p, .theback p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
 .descripcion {
     display: flex;
     background-color:#DDFFAB;
@@ -88,7 +170,7 @@
 .redes {
     display: inline-block;
     position:absolute;
-    width: 200px;
+    width: 150px;
     top: 650px;
     left:50%;
     -ms-transform:translate(-50%,-50%);
