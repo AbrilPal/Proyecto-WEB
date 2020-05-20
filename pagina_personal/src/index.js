@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Laberinto from './laberinto.jsx'
+import Pagina from './Principal.jsx'
 
-const DOMReal = document.getElementById('laberinto')
-const DOMVirtual = <Laberinto />
+const DOMReal = document.getElementById('principal')
+const DOMVirtual = <Pagina />
 ReactDOM.render(
   DOMVirtual, DOMReal,
 )
