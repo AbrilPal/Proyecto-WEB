@@ -1,23 +1,16 @@
 import React, { useEffect } from 'react'
+import './style.css';
 
 const Pagina = () => {
    
   //Hacer una div que tenga una animacion de bienvenida
-  // css
-  const body={
-    boxSizing: "border-box",
-    display: "flex",
-    backgroundColor: "#e2a9e5",
-    alignItems: "center",
-    justifyContent: "center",
-    fontFamily: "Open Sans",
-    fontSize: "40px",
-    height: "100vh"
-  }
+  
 
     return (
-      <div style={body}>
-        Holi q
+      <div class="bienvenida">
+        <h1 class="accessibility-animation">
+          <span class="end-letters">A</span><span class="middle-letters">bril</span><span class="alternate-middle-letters">15</span><span class="end-letters">P</span><span class="middle-letters">alencia</span>
+        </h1>
       </div>
     )
 }
