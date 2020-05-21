@@ -8,7 +8,7 @@
   background-color:#FFABAB;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 70px;
   height: 300px;
 }
@@ -28,16 +28,18 @@
     transition: all 0.8s ease;
     color: #F8BBD0;
     border: 2px solid #FFCDD2;
-    height: 150px;
-    padding: 20px;
+    height: 200px;
     border-radius: 6px;
-    font-size: 30px;
-    text-align: center;
 }
 
 .style_carta:hover{
     transform: rotateY(180deg);
   }
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
 
   .thefront{
     position: absolute;
@@ -77,7 +79,6 @@
     transform: rotateY(180deg);
   }
   
-  
   /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
   .thefront h1, .theback h1{
     font-family: 'zilla slab', sans-serif;
@@ -95,6 +96,11 @@
     text-align: center;
   }
 
+.logo2 {
+    width: 40px;
+    height: 30px;
+}
+
 .descripcion {
     display: flex;
     background-color:#DDFFAB;
@@ -103,7 +109,7 @@
     justify-content: center;
     font-family: 'Courier New';
     font-size: 20px;
-    height: 400px;
+    height: 380px;
 }
 
 .accessibility-animation {
